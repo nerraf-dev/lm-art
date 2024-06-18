@@ -16,7 +16,7 @@ export default function Home() {
         width={300}
         height={48}
       />
-      <p className="font-mono text-center">Just a normal person transmuting emotions.</p>
+      <p className="text-center playfair-display-sc-regular">Art is the cure for the soul.</p>
       <div className="py-6"></div>
       <div className="flex gap-4 pb-4">
         <div className="flex-1">
