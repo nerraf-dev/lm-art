@@ -14,7 +14,7 @@ export default function Hero({heading, message, buttonText, url="#"}:{heading:st
                     <Image src="/media/images/menu_logo_300px.png" alt="LM-Art" width={300} height={106} objectFit="cover" />
                 </div>
                 {/* <h2 className='text-2xl xs:text-3xl md:text-8xl font-bold p-4 font-mono font'>{heading}</h2> */}
-                <p className="py-5 text-l">{message}</p>
+                <p className="py-5 text-l ">{message}</p>
                 {buttonText && <Link href={url}><button className="px-8 py-2 border">{buttonText}</button></Link>}
             </div>
         </div>

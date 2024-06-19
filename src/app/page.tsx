@@ -7,7 +7,7 @@ import Hero from '@/components/Hero';
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between pt-24 px-12 m:px-28 ">
-      <Hero 
+      <Hero
         heading="LM-Art"
         message="Art is the cure for the soul."
       />
@@ -35,7 +35,7 @@ export default function Home() {
             width={500}
             height={500}
             />
-        </div>27
+        </div>
       </div>
       <div className="flex gap-4 pb-4">
         <div className="flex-1">
