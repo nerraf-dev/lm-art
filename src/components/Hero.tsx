@@ -11,7 +11,7 @@ export default function Hero({heading, message, buttonText, url="#"}:{heading:st
             {/* <div className="absolute top-0 left-0 right-0 bottom-0 bg-[#fffdf1]/80 z-[2]"/> Overlay */}
             <div className="p-5 text-zinc-700 z-[2] mx-auto text-center">
                 <div style={{ minWidth: '300px', minHeight: '106px' }}>
-                    <Image src="/media/images/logo-16-9.jpg" alt="LM-Art" width={800} height={106} objectFit="cover" />
+                    <Image src="/media/images/logo-16-9.jpg" alt="LM-Art" width={800} height={200} objectFit="cover" />
                 </div>
                 {/* <h2 className='text-2xl xs:text-3xl md:text-8xl font-bold p-4 font-mono font'>{heading}</h2> */}
                 <p className="py-5 text-l ">{message}</p>
