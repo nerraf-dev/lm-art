@@ -18,7 +18,7 @@ export default function Navbar() {
         <div className={`fixed w-full ${isOpen ? "h-12" : "h-12"} bg-[#fffdf1] shadow-l z-[100] p-4`}>
             <nav className="flex justify-between items-center w-full h-full px-2 2xl:px-16 ">
                 <Link href="/">
-                    <Image src="/media/images/menu_logo_40px.png" alt="logo" width={100} height={48} />
+                    <Image src="/media/images/menu_logo_300px.png" alt="logo" width={100} height={48} />
                 </Link>
                 <NavigationLinks className="hidden md:flex" />
                 <div className="md:hidden" onClick={handleNav}>
