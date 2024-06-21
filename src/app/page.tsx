@@ -5,7 +5,7 @@ import Hero from '@/components/Hero';
 
 export default function Home() {
   return (
-  <main className="flex flex-col items-center justify-between pt-24 px-12 m:px-28 ">
+  <main className="flex flex-col items-center justify-between pt-28 px-12 m:px-28 xl:pt-36">
 	{/* <div style={{ minWidth: '300px', minHeight: '106px' }}>
 		<Image src="/media/images/logo-16-9.png" alt="LM-Art" width={800} height={200}  />
 	</div>

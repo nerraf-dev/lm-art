@@ -5,6 +5,10 @@ export default function About() {
     <main className="flex flex-col items-center justify-between p-24 ">
       <h1>About</h1>
 
+      <div >
+          <Image src="/media/images/logo-16-9.png" alt="L Meriel Art" width='690' height='388' style={{ objectFit: 'cover' }} />
+        </div>
+
       <p>
         El arte, las líneas, los colores me han permitido verme a mí misma, en una hoja, lienzo, en blanco encontrar un espacio para sentir, pausar, transmutar, transformar lo que pasa fuera y dentro, un espejo para verme.
         Aquí solo vengo a mostrarme, vulnerable, feliz, triste, ansiosa, a exponer lo que se mueve dentro y con suerte mover algo en ustedes.
