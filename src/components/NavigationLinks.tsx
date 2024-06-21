@@ -1,19 +1,14 @@
 import React from "react";
-import Link from "next/link";
+import NavLink from "@/components/NavLink";
+import { FaInstagram } from "react-icons/fa6";
 
-function NavLink({ href, children, onClick }: { href: string; children: React.ReactNode; onClick?: () => void }) {
-    return (
-        <li className="ml-6 text-sm uppercase hover:border-b">
-            <Link href={href} onClick={onClick}>{children}</Link>
-        </li>
-    );
-}
-
-export default function NavigationLinks({className, onClick }: { className: string; onClick?: () => void }) {
+export default function NavigationLinks({className, onClick, isOpen }: { className: string; onClick?: () => void, isOpen: boolean }) {
     return (
         <ul className={`${className} space-x-4`}>
+            {isOpen && <NavLink href="/" onClick={onClick}>Home</NavLink>}
             <NavLink href="/about" onClick={onClick}>About</NavLink>
-            <NavLink href="/contact" onClick={onClick}>Contact</NavLink>
+            <NavLink href="https://www.instagram.com/lmeriel.art/" onClick={onClick}><FaInstagram size={20}/></NavLink>
+            {/* <NavLink href="/contact" onClick={onClick}>Contact</NavLink> */}
         </ul>
     );
 }
