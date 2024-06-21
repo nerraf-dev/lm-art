@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Hero from '@/components/Hero';
 import localFont from 'next/font/local'
  
 // Font files can be colocated inside of `pages`
@@ -51,6 +52,7 @@ export default function RootLayout({
       {/* <body className={play.className}> */}
       <body>
         <Header />
+        <Hero heading="" message="Art is the cure for the soul." />
         {children}
       </body>
     </html>
