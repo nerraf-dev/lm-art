@@ -12,13 +12,14 @@ const Header = () => {
         </div>
         <div className="w-full ">
           <div className="header-image-container">
-            <Image 
+            {/* <Image 
                 className="header-image"
                 src="/media/images/banner_1.jpg" 
                 alt="LM-Art" 
-                layout="fill" 
+                width={1119} 
+                height={400}
                 objectFit="cover"
-            />
+            /> */}
         </div>
             {/* <Image 
                 className="header-image"
@@ -29,7 +30,7 @@ const Header = () => {
                 style={{ width: '100%', height: 'auto' }}
             /> */}
         </div>
-          <p className="py-5 text-xs lg:text-sm xl:text-lg">Art is the cure for the soul.</p>
+          <p className="py-5 text-xs sm:text-sm xl:text-lg">Art is the cure for the soul.</p>
       </div>
         {/* <div className="pt-16 m:pt-24 pb-6"></div> */}
     </header>

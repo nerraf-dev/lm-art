@@ -1,16 +1,33 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display_SC } from "next/font/google";
+import { Inter, Playfair } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import localFont from 'next/font/local'
  
 // Font files can be colocated inside of `pages`
-const playfairBlack = localFont({ src: 'fonts/Playfair_Display_SC/PlayfairDisplaySC-Black.ttf' });
-const playfairBold = localFont({ src: 'fonts/Playfair_Display_SC/PlayfairDisplaySC-Bold.ttf' });
-const playfairRegular = localFont({ src: 'fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf' });
-const playfairItalic = localFont({ src: 'fonts/Playfair_Display_SC/PlayfairDisplaySC-Italic.ttf' });
+const playfairBlack = localFont({ 
+  src: 'fonts/Playfair_Display_SC/PlayfairDisplaySC-Black.ttf',
+  variable: '--font-playfair-black'
+});
+const playfairBold = localFont({ 
+  src: 'fonts/Playfair_Display_SC/PlayfairDisplaySC-Bold.ttf',
+  variable: '--font-playfair-bold'
+});
+const playfairRegular = localFont({ 
+  src: 'fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf',
+  variable: '--font-playfair-regular'
+});
+const playfairItalic = localFont({ 
+  src: 'fonts/Playfair_Display_SC/PlayfairDisplaySC-Italic.ttf',
+  variable: '--font-playfair-italic'
+});
 
-
+const pfd = Playfair({
+  weight: '400',
+  subsets: ['latin'],
+  style: 'normal',
+  variable: '--font-pfd'
+});
 // const inter = Inter({ subsets: ["latin"] });
 // const play = Playfair_Display_SC({
 //   weight: '400',
@@ -30,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={playfairRegular.className}>
+    <html lang="en" className={pfd.className}>
       {/* <body className={play.className}> */}
       <body>
         <Header />

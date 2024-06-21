@@ -27,8 +27,11 @@ body {
 
 .header-image-container {
   position: relative;
-  height: 200px;
+  height: 300px;
   width: 100%;
+  background-image: url('/media/images/banner_1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .header-image-container .header-image {
@@ -37,7 +40,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .header-image-container {
-      height: 150px;
+      height: 200px;
   }
 }
 
@@ -46,19 +49,3 @@ body {
       height: 150px;
   }
 }
-
-/* .header-image {
-  height: 200px;
-}
-
-@media screen and (min-width: 768px) {
-  .header-image {
-      height: 150px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .header-image {
-      height: 100px;
-  }
-} */
