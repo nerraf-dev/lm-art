@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.playfair {
+/* .playfair {
   font-family: var(--font-playfair), serif;
   font-size: xx-large;
   color: red;
-}
+} */
 
 body {
   background-color: #fffdf1;
