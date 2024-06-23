@@ -29,13 +29,7 @@ const pfd = Playfair({
   style: 'normal',
   variable: '--font-pfd'
 });
-// const inter = Inter({ subsets: ["latin"] });
-// const play = Playfair_Display_SC({
-//   weight: '400',
-//   subsets: ['latin'],
-//   style: 'normal',
-//   variable: '--font-playfair'
-// });
+
 
 export const metadata: Metadata = {
   title: "LM-Art",

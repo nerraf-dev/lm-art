@@ -2,11 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .playfair {
-  font-family: var(--font-playfair), serif;
-  font-size: xx-large;
-  color: red;
-} */
+@font-face {
+  font-family: 'Playfair Black';
+  src: url('./fonts/Playfair_Display_SC/PlayfairDisplaySC-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Bold';
+  src: url('./fonts/Playfair_Display_SC/PlayfairDisplaySC-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Regular';
+  src: url('./fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Italic';
+  src: url('./fonts/Playfair_Display_SC/PlayfairDisplaySC-Italic.ttf') format('truetype');
+}
+
 
 body {
   background-color: #fffdf1;
@@ -14,8 +29,26 @@ body {
   /* font-family: var(--font-playfair), 'Courier New'; */
 }
 
-.hero {
-  background-image: '/media/images/insta_sample_line.png';
+.hero .message {
+  font-family: "Playfair Regular";
+}
+
+.about h1{
+  font-family: "Playfair Regular";
+}
+
+.about p {
+  font-family:  var(--font-pfd), serif;
+}
+
+.about-image {
+  min-width: 200px;
+  height: 200;
+  border-style: solid;
+  border-width: 4px;
+  border-color: blue;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 
@@ -27,7 +60,7 @@ body {
 
 .header-image-container {
   position: relative;
-  height: 300px;
+  height: 150px;
   width: 100%;
   background-image: url('/media/images/banner_1.png');
   background-size: cover;
