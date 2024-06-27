@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import Hero from '@/components/Hero';
 import localFont from 'next/font/local'
  
@@ -48,6 +49,7 @@ export default function RootLayout({
         <Header />
         <Hero heading="" message="Art is the cure for the soul." />
         {children}
+        <Footer />
       </body>
     </html>
   );

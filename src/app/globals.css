@@ -29,6 +29,18 @@ body {
   /* font-family: var(--font-playfair), 'Courier New'; */
 }
 
+.footer
+{
+  background-color: #fffdf1;
+  color: #010100;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Playfair Regular";
+}
+
+
+
 .hero .message {
   font-family: "Playfair Regular";
 }
@@ -81,4 +93,43 @@ body {
   .header-image-container {
       height: 300px;
   }
+} */
+
+
+.commissions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.comms-lg, .comms-md, .comms-sm {
+  margin: 10px;
+  text-align: center;
+}
+
+.comms-lg {
+  width: 200px;
+  height: 200px;
+  background-color: #A0AEC0;
+}
+
+.comms-md {
+  width: 150px;
+  height: 150px;
+  background-color: #CBD5E0;
+}
+
+.comms-sm {
+  width: 100px;
+  height: 100px;
+  background-color: #E2E8F0;
+}
+
+/* .label
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 6px;
 } */
